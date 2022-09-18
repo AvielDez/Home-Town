@@ -94,7 +94,7 @@ header ul{
 .nav-container-header{ /*Used to keep the Navigation at the top. If I used flex display to align the nav bar items and used 'position: fixed' it would break the 'display: flex'*/
   position: fixed;
   top: 20px;
-  left: 50%;
+  left: 60%;
   width: 100%;
   z-index: 1;
 }
