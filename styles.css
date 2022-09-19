@@ -15,7 +15,7 @@
     --faded-orange: hsl(37, 55%, 52%);
     --bright-orange: hsl(37, 80%, 52%);
 
-    
+
     /*Main Section Colors*/
     --saturation: 54%; /*Saturation Control for main sections*/
     --lightness: 52%;  /*Lightness Control for main sections*/
@@ -43,7 +43,7 @@ body, html {
     scroll-snap-type: y mandatory;
     font-family: var(--sora);
   }
-  
+
 .scroll-snap{
     scroll-snap-align: start;
 }
@@ -81,29 +81,29 @@ header a:hover{
     font-size: 20px;
     border-bottom: 4px solid var(--light-color);
 }
+
 header ul{
     display: flex;
     gap: 36px;
     list-style-type: none;
 }
 
-.color-break-header{
-    color: var(--bright-orange);
+.nav-fixed-header{
+    position: fixed; 
+    top: 0;
+    width: 98%;
+    padding: 20px;
 }
 
 .nav-container-header{ /*Used to keep the Navigation at the top. If I used flex display to align the nav bar items and used 'position: fixed' it would break the 'display: flex'*/
-  position: fixed;
-  top: 20px;
-  left: 60%;
-  width: 100%;
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
-.home-a-header{
-    position: fixed;
-    top: 20px;
-    display: inline;
-    margin-left: 40px;
+.color-break-header{
+    color: var(--bright-orange);
 }
 
 /*Main*/
@@ -271,26 +271,26 @@ footer img{
 /*Notes:
 Animation hover states will trigger when website is first loaded up. This is not desirable.
 I understand that the logic in which the CSS code is written is causing this to happen but I am
-not sure any other way to get around this. 
+not sure any other way to get around this.
 
 For now the user will not see this happening because it's at the lower parts of website. In this case it works in my favor
-but for future projects I need to know how to avoid this. 
+but for future projects I need to know how to avoid this.
 
-This was a great exercise. I usually worry about making websites 
-responsive and as a beginner this can get very overwhelming. It was nice to only worry about 
+This was a great exercise. I usually worry about making websites
+responsive and as a beginner this can get very overwhelming. It was nice to only worry about
 creating a desktop version that works well.
 
 There was 3 major things I wanted to accomplish with this project
--create smooth card transition states using animations. 
+-create smooth card transition states using animations.
 -create a nav bar that would automatically scroll to each section on the webpage.
--Set up the website to scroll-snap when the user scrolls to next section. 
+-Set up the website to scroll-snap when the user scrolls to next section.
 
 Bonus accomplishments
 -learned a little bit of figma
--Got my hands dirty with some website design. 
+-Got my hands dirty with some website design.
 
-I did intend on having the background image to change in each section depending on which card the user hovered over but 
+I did intend on having the background image to change in each section depending on which card the user hovered over but
 if I am correct. I do not think it is possible to change the state of a parent element based on the child element you are
-hovering over I could only effect the child elements if I hover over the parent element. 
-I believe I need Javascript for this to work. 
+hovering over I could only effect the child elements if I hover over the parent element.
+I believe I need Javascript for this to work.
 */
